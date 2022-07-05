@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yutuqlar</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .gallery-page {
+        background: #eee;
+        padding: 0 15px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .titles {
+        padding: 70px 10px;
+        padding-bottom: 120px;
+        text-align: center;
+        font-family: "Manrope", sans-serif;
+        font-size: 34px;
+        font-weight: 700;
+        padding-top: 70px;
+        color: #353b48;
+      }
+
+      @media (max-width: 564px) {
+        .titles {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="gallery-page">
+      <div class="titles">
+        <h1 class="title">Erishilgan yutuqlar</h1>
+      </div>
+      <div id="gallery" class="gallery"></div>
+    </section>
+    <script src="./app/app.js"></script>
+  </body>
+</html>
